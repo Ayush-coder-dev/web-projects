@@ -19,11 +19,11 @@ html{
 
 .main{
     width: 17rem;
-    height: 15rem;
+    height: 19rem;
     border-radius: 1.5rem;
     background-color: hsl(213, 19%, 18%);
     display: grid;
-    
+
     padding: 2rem;
 }
 
@@ -55,6 +55,7 @@ html{
     color: hsl(217, 12%, 63%);
 }
 
+
 .submit{
     margin: 1.9rem 0  ;
     width: 100%;
@@ -62,5 +63,9 @@ html{
     border-radius: 1.2rem;
     background-color: hsl(25, 97%, 53%);
     border: none;
+}
+
+bgy{
+    background: yellow;
 }
 
