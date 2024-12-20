@@ -1,0 +1,37 @@
+body{
+    background: #000;
+    color: azure;
+}
+
+.comtainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.height{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.weight{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
