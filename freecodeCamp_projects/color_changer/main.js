@@ -1,12 +1,13 @@
 let normal = document.querySelector(".normalmode");
 let hex = document.querySelector(".hexmode");
 const btn = document.querySelector(".button1");
-const stop = document.querySelector(".button2");
+
 const value = document.querySelector(".hex");
 
 let isnormal = true;
 let ishex = false;
-let stopi;
+let isstart = true;
+let isstop = false;
 
 const randomhexcolor = () => {
   const hexcolorarray = [
@@ -58,16 +59,23 @@ hex.addEventListener("click", () => {
   ishex = true;
   console.log(isnormal, ishex);
 });
+let set;
 btn.addEventListener("click", () => {
-  stopi = setInterval(() => {
-    if (isnormal === true) {
-      document.body.style.backgroundColor = randomnormalcolor();
-    } else {
-      document.body.style.backgroundColor = randomhexcolor();
-    }
-  }, 1000);
+  if (isstart === true) {
+    
+     set = setInterval(() => {
+      if (isnormal === true) {
+        document.body.style.backgroundColor = randomnormalcolor();
+      } else {
+        document.body.style.backgroundColor = randomhexcolor();
+      }
+    }, 1000);
+    isstart = false;
+    btn.textContent = "start";
+    
+  } else {
+    btn.textContent = "stop";
+    clearInterval(set);
+    isstart = true;
+  }
 });
-
-stop.addEventListener("click",()=>{
-  clearInterval(stopi);
-})
