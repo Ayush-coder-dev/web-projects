@@ -7,11 +7,11 @@ let isbtn = true;
 fbtn.addEventListener("click", () => {
   if (isbtn) {
     show.classList.add("hide");
-    sbtn.classList.remove("hide");
+    sbtn.classList.remove("hidethis");
   }
 });
 
 sbtn.addEventListener("click", () => {
   show.classList.remove("hide");
-  sbtn.classList.add("hide");
+  sbtn.classList.add("hidethis");
 });
