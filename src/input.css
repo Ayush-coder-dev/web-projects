@@ -9,5 +9,11 @@
     .btn{
       @apply border-2 bg-slate-200 rounded-md w-16 absolute right-[3%] top-2 m-1;
     }
+    .btn-2{
+      @apply border-2 bg-slate-200 rounded-md min-w-16 text-black px-1 hover:text-white hover:bg-black hover:border-none
+    }
+    .menu-box{
+      @apply w-[40%] min-h-24 border-2  m-6 rounded-md p-1
+    }
     
     }
