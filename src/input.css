@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .box{
+        @apply  w-full min-h-24 p-5 border-2 rounded-md;
+      }
+    .btn{
+      @apply border-2 bg-slate-200 rounded-md w-16 absolute right-[3%] top-2 m-1;
+    }
+    
+    }
